@@ -1,0 +1,53 @@
+body {
+    background-color: #252525;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #80FFDB;
+}
+
+.head {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work {
+    background-color: #252525;
+    margin: 10px;
+    /*max-width: 29,5%;*/
+    max-width: 30vw;
+}
+
+.ascii {
+    background-color: #252525;
+    font: medium/1 monospace;
+    font-size: 1vw;
+    color: #6930C3;
+}
+
+.desc {
+    background-color: #252525;
+    border-style: outset;
+    border-color: #64DFDF;
+    padding:1em;
+    inline-size: 26.1vw;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .work {
+        width: 90%;
+    }
+    .ascii {
+        font-size: 2.98vw;
+    }
+    .desc {
+        inline-size: 76vw;
+        overflow-wrap: break-word;
+    }
+}

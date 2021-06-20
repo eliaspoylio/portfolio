@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ work[0].title }}</h1>
+<div class="ascii">
+    {% for line in work[0].art %}
+    {{ line }} <br>
+    {% endfor %}
+</div>
+<p>{{ work[0].body }}</p>
+{% endblock %}
