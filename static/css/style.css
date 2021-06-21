@@ -4,6 +4,15 @@ body {
     color: #80FFDB;
 }
 
+a:link, a:visited {
+    color: 80FFDB;
+    text-decoration: none;
+}
+  
+  a:hover, a:active {
+    background-color: #6930C3;
+}
+
 .head {
     margin: 10px;
 }

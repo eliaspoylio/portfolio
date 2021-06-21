@@ -56,5 +56,4 @@ def index(works=works):
 @app.route('/<path:url_path>')
 def work(url_path="", works=works):
     work = list(filter(lambda work: work['title'] == url_path, works))
-    print(work)
     return render_template('work.html', title=url_path, work=work)
